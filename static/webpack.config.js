@@ -4,7 +4,8 @@ const path = require('path')
 module.exports = {
     // source file location
     entry: {
-        visual: path.resolve(__dirname, "src", "js", "visual.js")
+        visual: path.resolve(__dirname, "src", "js", "visual.js"),
+        colorpicker: path.resolve(__dirname, "src", "js", "colorpicker.js")
     },
     mode: "development",
     target: "web",
