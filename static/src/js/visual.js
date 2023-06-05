@@ -15,10 +15,11 @@ function setup() {
 function draw(){
   background('#f3f3f3');
   orbitControl();
+
   let locX = mouseX - width / 2;
   let locY = mouseY - height / 2;
 
-  ambientLight(200, 200, 110);
+  ambientLight(180, 190, 110);
 
   if (setSpecularColor) {
     specularColor(168, 221, 240);
@@ -33,6 +34,6 @@ function draw(){
   scale(2)
   rotateX(-10)
   rotateY(16)
-  rotateY(millis() / 6000);
+  // rotateY(millis() / 6000);
   model(martiniModel);
 }
