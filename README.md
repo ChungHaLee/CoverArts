@@ -1,2 +1,2 @@
-# VisualArts
-Visual Arts Using p5.js
+# CoverArts
+CoverArts Using p5.js and Vanilla Javascript
