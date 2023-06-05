@@ -15,7 +15,7 @@
   \*******************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://VisualArts/./src/js/colorpicker.js?");
+eval("const input = document.querySelector(\"input\")\nconst output = document.querySelector(\"output\")\nlet imagesArray = []\n\n\ninput.addEventListener(\"change\", () => {\n    const file = input.files\n    imagesArray.push(file[0])\n    displayImages()\n  })\n\n\n\nfunction displayImages() {\n    let images = \"\"\n    imagesArray.forEach((image, index) => {\n        images += `<div class=\"image\">\n                    <img src=\"${URL.createObjectURL(image)}\" alt=\"image\">\n                    <span onclick=\"deleteImage(${index})\">&times;</span>\n                </div>`\n    })\n    output.innerHTML = images\n}\n\n\n\nfunction deleteImage(index) {\n    imagesArray.splice(index, 1)\n    displayImages()\n}\n\n//# sourceURL=webpack://VisualArts/./src/js/colorpicker.js?");
 
 /***/ })
 

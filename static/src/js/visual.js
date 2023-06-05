@@ -8,12 +8,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+  createCanvas(600, 600, WEBGL);
   noStroke();
 }
 
 function draw(){
-  background(255);
+  background('#f3f3f3');
   orbitControl();
   let locX = mouseX - width / 2;
   let locY = mouseY - height / 2;
